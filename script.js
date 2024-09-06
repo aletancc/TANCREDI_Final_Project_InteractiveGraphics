@@ -71,71 +71,72 @@ class Box {
 // Initialize the boxes
 const initializeBoxes = () => {
   // Box 1: Moving from -50 to 0
-  const box1 = new Box(15, 60, 10, new THREE.Vector3(-50, 0, -300), true, { min: -50, max: -15 }, 0.2);
+  const box1 = new Box(15, 90, 10, new THREE.Vector3(-50, 0, -300), true, { min: -50, max: -15 }, 0.2);
   boxes.push(box1);
 
   // Box 2: Moving from 50 to 0
-  const box2 = new Box(15, 60, 10, new THREE.Vector3(50, 0, -300), true, { min: 15, max: 50 }, 0.5);
+  const box2 = new Box(15, 90, 10, new THREE.Vector3(50, 0, -300), true, { min: 15, max: 50 }, 0.5);
   boxes.push(box2);
 
   // Box 3: Moving from 50 to -50
-  const box3 = new Box(15, 60, 10, new THREE.Vector3(50, 0, -610), true, { min: -50, max: 50 }, 0.6);
+  const box3 = new Box(15, 90, 10, new THREE.Vector3(50, 0, -610), true, { min: -50, max: 50 }, 0.6);
   boxes.push(box3);
 
   // Box 4: Static
-  const box4 = new Box(15, 60, 10, new THREE.Vector3(0, 0, -890));
+  const box4 = new Box(15, 90, 10, new THREE.Vector3(0, 0, -890));
   boxes.push(box4);
 
   // Box 5: Moving from -50 to 50
-  const box5 = new Box(15, 60, 10, new THREE.Vector3(-50, 0, -1180), true, { min: -50, max: 50 }, 0.2);
+  const box5 = new Box(15, 90, 10, new THREE.Vector3(-50, 0, -1180), true, { min: -50, max: 50 }, 0.2);
   boxes.push(box5);
 
   // Box 6: Moving from 50 to 0
-  const box6 = new Box(15, 60, 10, new THREE.Vector3(50, 0, -1400), true, { min: 15, max: 50 }, 0.3);
+  const box6 = new Box(15, 90, 10, new THREE.Vector3(50, 0, -1400), true, { min: 15, max: 50 }, 0.3);
   boxes.push(box6);
 
   // Box 7: Moving from -50 to 0
-  const box7 = new Box(15, 60, 10, new THREE.Vector3(-50, 0, -1400), true, { min: -50, max: -15 }, 0.3);
+  const box7 = new Box(15, 90, 10, new THREE.Vector3(-50, 0, -1400), true, { min: -50, max: -15 }, 0.3);
   boxes.push(box7);
 
   // Box 8: Moving from 30 to -30
-  const box8 = new Box(15, 60, 10, new THREE.Vector3(30, 0, -1750), true, { min: -30, max: 30 }, 0.5);
+  const box8 = new Box(15, 90, 10, new THREE.Vector3(30, 0, -1750), true, { min: -30, max: 30 }, 0.5);
   boxes.push(box8);
 
   // Box 9: Static
-  const box9 = new Box(15, 60, 10, new THREE.Vector3(-50, 0, -2000));
+  const box9 = new Box(15, 90, 10, new THREE.Vector3(-50, 0, -2000));
   boxes.push(box9);
 
   // Box 10: Static
-  const box10 = new Box(15, 60, 10, new THREE.Vector3(50, 0, -2000));
+  const box10 = new Box(15, 90, 10, new THREE.Vector3(50, 0, -2000));
   boxes.push(box10);
 
-  const box11 = new Box(15, 60, 10, new THREE.Vector3(-50, 0, -2330), true, { min: -50, max: -15 }, 0.2);
+  const box11 = new Box(15, 90, 10, new THREE.Vector3(-50, 0, -2330), true, { min: -50, max: -15 }, 0.2);
   boxes.push(box11);
 
   // Box 12: Moving from 50 to 0
-  const box12 = new Box(15, 60, 10, new THREE.Vector3(50, 0, -2330), true, { min: 15, max: 50 }, 0.5);
+  const box12 = new Box(15, 90, 10, new THREE.Vector3(50, 0, -2330), true, { min: 15, max: 50 }, 0.5);
   boxes.push(box12);
 
   // Box 13: Moving from 50 to -50
-  const box13 = new Box(15, 60, 10, new THREE.Vector3(50, 0, -2510), true, { min: -50, max: 50 }, 0.6);
+  const box13 = new Box(15, 90, 10, new THREE.Vector3(50, 0, -2510), true, { min: -50, max: 50 }, 0.6);
   boxes.push(box13);
 
   // Box 14: Static
-  const box14 = new Box(15, 60, 10, new THREE.Vector3(0, 0, -2700));
+  const box14 = new Box(15, 90, 10, new THREE.Vector3(0, 0, -2700));
   boxes.push(box14);
 
   // Box 15: Moving from 50 to 0
-  const box15 = new Box(15, 60, 10, new THREE.Vector3(50, 0, -3350), true, { min: 15, max: 50 }, 0.3);
+  const box15 = new Box(15, 90, 10, new THREE.Vector3(50, 0, -3350), true, { min: 15, max: 50 }, 0.3);
   boxes.push(box15);
 
   // Box 7: Moving from -50 to 0
-  const box16 = new Box(15, 60, 10, new THREE.Vector3(-50, 0, -3350), true, { min: -50, max: -15 }, 0.3);
+  const box16 = new Box(15, 90, 10, new THREE.Vector3(-50, 0, -3350), true, { min: -50, max: -15 }, 0.3);
   boxes.push(box16);
 };
 
 // Call this function after your scene is set up to add the boxes
 initializeBoxes();
+
 
 
 
@@ -269,12 +270,12 @@ asteroidLoader.load('/static/asteroids_pack_metallic_version/scene.gltf', (gltfS
 
   // Manually set positions for each asteroid
   const asteroidPositions = [
-    new THREE.Vector3(-30, 380, 0),
+    new THREE.Vector3(-20, 380, 0),
     new THREE.Vector3(25, 530, 0),
-    new THREE.Vector3(-15, 620, 0),
+    new THREE.Vector3(-10, 620, 0),
     new THREE.Vector3(0, 810, 0),
-    new THREE.Vector3(-25, 930, 0),
-    new THREE.Vector3(40, 1080, 0),
+    new THREE.Vector3(-20, 930, 0),
+    new THREE.Vector3(30, 1080, 0),
     new THREE.Vector3(10, 1280, 0),
     new THREE.Vector3(-3, 1390, 0),
     new THREE.Vector3(10, 1500, 0),
@@ -456,7 +457,6 @@ const updateSpaceshipMovement = () => {
     spaceshipModel.position.y = 0;
   }
 };
-
 
 
 
@@ -693,6 +693,8 @@ const updateBoundingBoxes = () => {
 let starCount = 0;
 const collidedStars = new Set(); // Set to track collided stars
 
+let isCollisionDetected = false; // Flag to track if a collision has been processed
+
 const checkCollision = () => {
   if (spaceshipModel) {
     // Update bounding boxes
@@ -710,26 +712,49 @@ const checkCollision = () => {
     });
 
 
+
+    // Check for spaceship-box collisions
     boxes.forEach(box => {
       if (spaceshipBoundingBox.intersectsBox(box.boundingBox)) {
-        // Collision with a box detected
-        moveSpeed = 0;
-        lives--;
-        console.log("Collision Detected with Box at position", spaceshipModel.position);
-        
-        // Show an alert
-        alert(`Collision detected with a box! Lives remaining: ${lives}`);
-        
-        if (lives <= 0) {
-          displayGameOver();
+        if (!isCollisionDetected) {
+          // Collision with a box detected
+          moveSpeed = 0;
           isGameOver = true;
-        } else {
-          // Reset the game for the next life
-          resetGame();
+          lives--;
+
+          console.log("Collision Detected with Box at position", spaceshipModel.position);
+          
+          //displayCollisionDetected();
+
+
+          // Update hearts visibility based on remaining lives
+          if (lives === 2) {
+            livesIcon_3.style.display = 'none'; // Hide the third heart icon
+          } else if (lives === 1) {
+            livesIcon_2.style.display = 'none'; // Hide the second heart icon
+          } else if (lives <= 0) {
+            livesIcon_1.style.display = 'none'; // Hide the first heart icon
+          }
+
+          // Prevent further collisions from being processed
+          isCollisionDetected = true;
+
+          // Delay the reset of the game by 2 seconds
+          setTimeout(() => {
+            if (lives <= 0) {
+              displayGameOver();
+              isGameOver = true;
+            } else {
+              isGameOver = false;
+              resetGame();
+            }
+            // Reset the collision flag after the timeout
+            isCollisionDetected = false;
+          }, 1000); // 2000 milliseconds = 2 seconds
         }
-        
       }
     });
+
 
     
 
@@ -833,7 +858,7 @@ const displayGameOver = () => {
   const gameOverText = document.createElement('div');
   gameOverText.innerText = "GAME OVER";
   gameOverText.style.position = 'absolute';
-  gameOverText.style.top = '50%';
+  gameOverText.style.top = '35%';
   gameOverText.style.left = '50%';
   gameOverText.style.transform = 'translate(-50%, -50%)';
   gameOverText.style.fontSize = '80px';
@@ -860,7 +885,7 @@ const resetGame = () => {
   }
 
   // Restart animation or game loop
-  //animate();
+  animate();
 };
 
 
@@ -876,6 +901,30 @@ const displayWin = () => {
   WinText.style.fontSize = '100px';
   WinText.style.color = '#00ff0dd2';
   document.body.appendChild(WinText);
+};
+
+
+// Function to display collision detected message
+const displayCollisionDetected = () => {
+  const collisionText = document.createElement('div');
+  
+  // Use backticks for template literals
+  collisionText.innerText = `Lives remaining: ${lives}`; 
+  
+  collisionText.style.position = 'absolute';
+  collisionText.style.top = '20%';
+  collisionText.style.left = '50%';
+  collisionText.style.transform = 'translate(-50%, -50%)';
+  collisionText.style.fontSize = '80px';
+  collisionText.style.color = '#fbff00';
+  collisionText.style.zIndex = '1000'; // Ensure it's on top of other elements
+  
+  document.body.appendChild(collisionText);
+
+  // Remove the text after a few seconds
+  setTimeout(() => {
+    collisionText.remove();
+  }, 2000); // Adjust the duration as needed
 };
 
 
@@ -1090,9 +1139,7 @@ const startCountdown = () => {
           moveSpeed = 1;
           countdownElement.textContent = ''; // Clear the display when time is up
             clearInterval(countdownInterval);
-           // countdownElement.textContent = 'Time: 00:00'; // Ensure the display shows 00:00
-            // Optionally, you can add additional logic here when the countdown reaches zero
-   //         console.log('Countdown finished');
+
         }
     }, 1000); // Update every second
 };
@@ -1172,6 +1219,9 @@ window.addEventListener('DOMContentLoaded', () => {
   const startScreen = document.querySelector('.start-screen');
   const startButton = document.querySelector('.start-button');
   const canvas = document.querySelector('.threejs');
+  const livesIcon_1 = document.getElementById('livesIcon_1');
+  const livesIcon_2 = document.getElementById('livesIcon_2');
+  const livesIcon_3 = document.getElementById('livesIcon_3');
   const coinIcon = document.getElementById('coinIcon');
   const starCountContainer = document.getElementById('starCountContainer');
   
@@ -1181,6 +1231,9 @@ window.addEventListener('DOMContentLoaded', () => {
     startScreen.style.display = 'none';
     canvas.style.display = 'block';
     coinIcon.style.display = 'block';
+    livesIcon_1.style.display = 'block';
+    livesIcon_2.style.display = 'block';
+    livesIcon_3.style.display = 'block';
     starCountContainer.style.display = 'flex'; // Use 'flex' to match the CSS display property
 
     // Start the animation loop

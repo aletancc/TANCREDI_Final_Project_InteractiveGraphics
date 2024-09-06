@@ -59,6 +59,38 @@
             text-align: center;
         }
 
+
+        #livesIcon_1 {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            width: 60px;
+            height: auto;
+            z-index: 1000; 
+            display: none;
+        }
+
+        #livesIcon_2 {
+            position: fixed;
+            top: 30px;
+            left: 90px;
+            width: 60px;
+            height: auto;
+            z-index: 1000; 
+            display: none;
+        }
+
+        #livesIcon_3 {
+            position: fixed;
+            top: 30px;
+            left: 150px;
+            width: 60px;
+            height: auto;
+            z-index: 1000; 
+            display: none;
+        }
+
+
         
         #coinIcon {
             position: fixed;
@@ -95,6 +127,10 @@
     </div>
     <div id="countdown-display"></div>
     <canvas class="threejs"></canvas>
+
+    <img id="livesIcon_1" class="hidden" src="/img/heart.png" alt="Lives_1" />
+    <img id="livesIcon_2" class="hidden" src="/img/heart.png" alt="Lives_2" />
+    <img id="livesIcon_3" class="hidden" src="/img/heart.png" alt="Lives_3" />
 
     <img id="coinIcon" class="hidden" src="/img/coin.png" alt="Coin" />
     <div id="starCountContainer" class="hidden">
